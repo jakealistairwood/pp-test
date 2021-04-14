@@ -1,0 +1,39 @@
+@import '../../assets/styles/main';
+
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url('../../assets/img/hero-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 50px;
+
+    .cta__btn {
+        position: absolute;
+        bottom: 14%;
+        left: 14%;
+        width: 243px;
+        height: 69px;
+    }
+}
+
+.keyMessages {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: $green;
+
+    .messages {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .message {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
