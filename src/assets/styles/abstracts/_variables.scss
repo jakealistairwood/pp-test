@@ -1,18 +1,57 @@
+/* =================================================================
+Typography imports 
+================================================================= */
+
+// Avalon font - primarily used for headers
 @import '../../fonts/Avallon.ttf';
 
-// Typography
+// MerlodNorme - Light weight import 
+@font-face {
+    font-family: 'MerlodNorme-Light';
+    src: url('../../fonts/\ MerlodNorme-Light.otf');
+}
 
+// MerlodNorme - Regular weight imports
+@font-face {
+    font-family: 'MerlonNorme-Regular';
+    src: url('../../fonts/MerlodNorme-Regular.otf');
+}
+
+@font-face {
+    font-family: 'MerlodNorme-Regular-Edited';
+    src: url('../../fonts/MerlodNorme-Regular-Edited0.otf');
+}
+
+// MerlodNorme - Semi-Bold weight import
+@font-face {
+    font-family: 'MerlodNorme-Semi-Bold';
+    src: url('../../fonts/MerlodNorme-SemiBold.otf');
+}
+
+// MerlodNorme - Bold weight imports
+@font-face {
+    font-family: 'MerlodNorme-Bold';
+    src: url('../../fonts/MerlodNorme-Bold.otf');
+}
+
+@font-face {
+    font-family: 'MerlodNorme-Bold-Edited';
+    src: url('../../fonts/MerlodNorme-Bold-Edited0.otf')
+}
+
+// Typography
 $headerFont: 'Avallon';
+$regularFont: 'MerlodNorme-Regular', sans-serif;
+$lightFont: 'MerlodNorme-Regular' sans-serif;
+$semiBoldFont: 'MerlodNorme-Semi-Bold', sans-serif;
+$boldFont: 'MerlodNorme-Bold', sans-serif;
 
 // Colour Pallette
-
-$green: '#43b870';
-$pink: '#ed1f78';
-$lightBlue: '#53c2ea';
-$offYellow: '#fff46d';
-$white: '#ffffff';
-$turquoise: '#00b5b6';
-$orange: '#f27052';
-$darkGrey: '#333333';
-
-
+$green: #43b870;
+$white: #ffffff;
+$pink: #ed1f78;
+$lightBlue: #53c2ea;
+$offYellow: #fff46d;
+$turquoise: #00b5b6;
+$orange: #f27052;
+$darkGrey: #333333;
