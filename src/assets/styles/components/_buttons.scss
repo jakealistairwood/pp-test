@@ -12,6 +12,10 @@
     background-color: $offYellow;
     color: #000;
     font-family: $regularFont;
+
+    &:hover {
+        background-color: #F1E763;
+    }
 }
 
 .cta__btn {
