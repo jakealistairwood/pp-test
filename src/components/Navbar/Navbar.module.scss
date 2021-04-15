@@ -2,6 +2,9 @@
 
 .navbar {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +12,7 @@
     background-image: url('../../assets/img/navbar_banner.png');
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1000;
 
     .navbar__logo {
         display: flex;
@@ -51,6 +55,11 @@
             color: $white;
             padding: 7px;
             font-size: 1.2rem;
+
+            &:hover {
+                // background-color: #DF1F7A;
+                background-color: #D22377;
+            }
         }
     }
 }

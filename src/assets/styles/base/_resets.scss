@@ -5,15 +5,21 @@
     font-size: 16px;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 button, a, li {
     cursor: pointer;
+    text-transform: uppercase
 }
 
 button {
     border: none;
+    transition: 0.3s ease-in;
 }
 
 li {
     list-style: none;
-    text-transform: uppercase;
 }
