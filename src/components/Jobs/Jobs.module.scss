@@ -1,0 +1,148 @@
+@import '../../assets/styles/main';
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+
+    .jobs__roles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .jobs__rolesLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $turquoise;
+            width: 50%;
+            padding: 150px 50px;
+            // height: 80vh;
+
+            h2 {
+                font-size: 4rem;
+                color: $offYellow;
+                line-height: 55px;
+                letter-spacing: 0.07em;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $white;
+                margin-bottom: 30px;
+                width: 55%;
+                text-align: center;
+                font-size: 2rem;
+
+                span {
+                    color: $white;
+                    font-family: $regularFont;
+                    font-size: 2rem;
+                    font-style: italic;
+                }
+            }
+
+            .primary__btn {
+                font-size: 1.7rem;
+                padding: 15px 35px;
+            }
+        }
+
+        .jobs__rolesRight {
+            // height: 100vh;
+            width: 50%;
+            // clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+            background-image: url('../../assets/img/explorejobs-img.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -150px;
+            background-color: $turquoise;
+        }
+    }
+
+    .jobs__featured {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .jobs__featuredContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 150px 50px;
+
+            h2 {
+                font-size: 3rem;
+                color: $lightBlue;
+                line-height: 50px;
+                letter-spacing: 0.07em;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .primary__btn {
+                font-size: 1.7rem;
+                padding: 15px 35px;
+            }
+        }
+
+        .jobs__featuredImg {
+            background-image: url('../../assets/img/explorejobs-img2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -150px;
+            width: 50%;
+        }
+    }
+
+    .jobs__vacancies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .jobs__vacanciesContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 150px 50px;
+            background-color: $orange;
+
+            h2 {
+                font-size: 4rem;
+                color: $offYellow;
+                line-height: 55px;
+                letter-spacing: 0.07em;
+                margin-bottom: 15px;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 30px;
+                color: $white;
+                font-size: 2rem;
+            }
+
+            .secondary__btn {
+                font-size: 1.7rem;
+                padding: 15px 35px;
+            }
+        }
+
+        .jobs__vacanciesImg {
+            background-image: url('../../assets/img/explorejobs-img3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -70px;
+            width: 50%;
+        }
+    }
+}

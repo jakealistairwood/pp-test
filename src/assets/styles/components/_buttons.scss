@@ -1,10 +1,17 @@
 .primary__btn {
     background-color: $pink;
     color: $white;
+    font-family: $regularFont;
 
     &:hover {
         background-color: #D22377;
     }
+}
+
+.secondary__btn {
+    background-color: $offYellow;
+    color: #000;
+    font-family: $regularFont;
 }
 
 .cta__btn {
