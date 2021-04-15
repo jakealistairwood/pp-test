@@ -1,5 +1,10 @@
 .primary__btn {
     background-color: $pink;
+    color: $white;
+
+    &:hover {
+        background-color: #D22377;
+    }
 }
 
 .cta__btn {
