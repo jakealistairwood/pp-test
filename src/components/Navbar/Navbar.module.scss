@@ -55,6 +55,11 @@
             color: $white;
             padding: 7px;
             font-size: 1.2rem;
+
+            &:hover {
+                // background-color: #DF1F7A;
+                background-color: #D22377;
+            }
         }
     }
 }

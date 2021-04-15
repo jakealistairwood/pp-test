@@ -3,7 +3,11 @@ Typography imports
 ================================================================= */
 
 // Avalon font - primarily used for headers
-@import '../../fonts/Avallon.ttf';
+
+@font-face {
+    font-family: 'Avallon';
+    src: url('../../fonts/Avallon.ttf');
+}
 
 // MerlodNorme - Light weight import 
 @font-face {
