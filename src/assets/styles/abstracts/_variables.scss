@@ -59,3 +59,7 @@ $offYellow: #fff46d;
 $turquoise: #00b5b6;
 $orange: #f27052;
 $darkGrey: #333333;
+
+// Img clip polyglon
+$leftImgClip: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+$rightImgClip: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
