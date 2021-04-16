@@ -5,6 +5,7 @@ import CTA from './components/CTA';
 import Jobs from './components/Jobs';
 import News from './components/News';
 import Perks from './components/Perks';
+import About from './components/About';
 import './App.scss';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Jobs />
       <News />
       <Perks />
+      <About />
     </main>
   )
 }
