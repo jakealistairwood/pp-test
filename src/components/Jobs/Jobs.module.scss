@@ -9,30 +9,15 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .jobs__rolesLeft {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .jobs__rolesContent {
             background-color: $turquoise;
-            width: 50%;
-            padding: 150px 50px;
-            // height: 80vh;
 
-            h2 {
-                font-size: 4rem;
+            h3 {
                 color: $offYellow;
-                line-height: 55px;
-                letter-spacing: 0.07em;
-                margin-bottom: 15px;
             }
 
             p {
                 color: $white;
-                margin-bottom: 30px;
-                width: 55%;
-                text-align: center;
-                font-size: 2rem;
 
                 span {
                     color: $white;
@@ -41,22 +26,15 @@
                     font-style: italic;
                 }
             }
-
-            .primary__btn {
-                font-size: 1.7rem;
-                padding: 15px 35px;
-            }
         }
 
-        .jobs__rolesRight {
-            // height: 100vh;
-            width: 50%;
-            // clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        .jobs__rolesImg {
+            width: 54%;
             background-image: url('../../assets/img/explorejobs-img.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 0 -150px;
-            background-color: $turquoise;
+            clip-path: $rightImgClip;
         }
     }
 
@@ -70,26 +48,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 46%;
             padding: 150px 50px;
 
-            h2 {
-                font-size: 3rem;
+            h3 {
                 color: $lightBlue;
-                line-height: 50px;
-                letter-spacing: 0.07em;
-                text-align: center;
-                margin-bottom: 10px;
             }
 
             p {
                 text-align: center;
                 margin-bottom: 30px;
-            }
-
-            .primary__btn {
-                font-size: 1.7rem;
-                padding: 15px 35px;
             }
         }
 
@@ -98,7 +66,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 0 -150px;
-            width: 50%;
+            clip-path: $leftImgClip;
         }
     }
 
@@ -106,29 +74,23 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: $orange;
+            height: 100%;
+            width: 100%;
+            display: block;
+            z-index: -1;
+        }
 
         .jobs__vacanciesContent {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            padding: 150px 50px;
             background-color: $orange;
 
-            h2 {
-                font-size: 4rem;
+            h3 {
                 color: $offYellow;
-                line-height: 55px;
-                letter-spacing: 0.07em;
-                margin-bottom: 15px;
-            }
-
-            p {
-                text-align: center;
-                margin-bottom: 30px;
-                color: $white;
-                font-size: 2rem;
             }
 
             .secondary__btn {
@@ -142,7 +104,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 0px -70px;
-            width: 50%;
+            clip-path: $rightImgClip;
         }
     }
 }

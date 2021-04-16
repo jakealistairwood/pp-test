@@ -1,9 +1,23 @@
+.section__container {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: $turquoise;
+        height: 100%;
+        width: 100%;
+        display: block;
+        z-index: -1;
+    }
+}
+
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 46%;
     padding: 150px 50px;
     // height: 80vh;
 
@@ -21,16 +35,20 @@
         text-align: center;
         font-size: 2rem;
 
-        span {
-            color: $white;
-            font-family: $regularFont;
-            font-size: 2rem;
-            font-style: italic;
-        }
+        // span {
+        //     color: $white;
+        //     font-family: $regularFont;
+        //     font-size: 2rem;
+        //     font-style: italic;
+        // }
     }
 
     .primary__btn {
         font-size: 1.7rem;
         padding: 15px 35px;
     }
+}
+
+.imgContainer {
+    width: 54%;
 }
