@@ -17,7 +17,7 @@ const Jobs = () => {
             </div>    
             <div className={styles.jobs__featured}>
                 <div className={styles.jobs__featuredContent}>
-                    <h2>Work Time?<br></br> More Like Show Time</h2>
+                    <h2>Work time?<br></br> More like show time</h2>
                     <p>Head Chef Jobs <br></br>At Las Iguanas</p>
                     <button className={styles.primary__btn}>Explore Role</button>
                 </div>
@@ -27,7 +27,7 @@ const Jobs = () => {
             </div>    
             <div className={styles.jobs__vacancies}>
             <div className={styles.jobs__vacanciesContent}>
-                    <h2>Join The Celebration</h2>
+                    <h2>Join the celebration</h2>
                     <p>Find A Job With More Sizzle <br></br>At Las Iguanas</p>
                     <button className={styles.secondary__btn}>Find Jobs Near You</button>
                 </div>
