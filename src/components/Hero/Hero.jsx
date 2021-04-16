@@ -17,9 +17,9 @@ const Hero = () => {
 
     return (
         <>
-        <section className={styles.hero}>
+        <header className={styles.hero}>
             <button className={styles.cta__btn}>Find Your Job</button>    
-        </section>
+        </header>
         <section className={styles.keyMessages}>
             <ul className={styles.messages}>
                 {renderMessages}
