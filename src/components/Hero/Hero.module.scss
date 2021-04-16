@@ -10,6 +10,10 @@
     background-position: center center;
     margin-top: 50px;
 
+    @media screen and (max-width: 1440px) {
+        background-size: cover;
+    }
+
     .cta__btn {
         position: absolute;
         bottom: 14%;
@@ -19,43 +23,65 @@
         width: 12vw;
         height: 7vh;
         font-size: 1.4vw;
+
+        @media screen and (max-width: 1024px) {
+            width: 200px;
+            height: 60px;
+            font-size: 1.5rem;
+            bottom: 6%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
-.keyMessages {
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    background-color: $green;
     display: flex;
     align-items: center;
-    height: 10vh;
-    width: 100%;
-    background-color: $green;
 
-    .messages {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        overflow-y: hidden;
-        overflow-x: scroll;
+    .ticker__wrapper {
+        width: 100%;
+        padding-left: 100%;
 
-        .message {
-            display: flex;
-            align-items: center;
+        .ticker__messages {
+            display: inline-block;
+            white-space: nowrap;
+            padding-right: 100%;
+            animation: ticker 20s linear infinite;
 
-            .svg__container {
-                width: 20px;
-                height: 20px;
+            .ticker__message {
+                color: white;
+                display: inline-block;
+                cursor: default;
 
-                img {
-                    width: 100%;
+                .ticker__messageWrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    span {
+                        color: $white;
+                        font-family: $semiBoldFont;
+                        font-size: 1.8rem;
+                        margin: 0 40px;
+                        white-space: nowrap;
+                    }
                 }
             }
-            
-            span {
-                color: $white;
-                font-family: $semiBoldFont;
-                font-size: 1.8rem;
-                margin: 0 40px;
-                white-space: nowrap;
-            }
         }
+    }
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
     }
 }
