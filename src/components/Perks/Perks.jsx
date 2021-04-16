@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Perks.module.scss';
-import sundayTimesImg from '../../assets/img/sunday-times.png';
 
 const Perks = () => {
 
@@ -13,10 +12,9 @@ const Perks = () => {
                     <button className={styles.primary__btn}>Find Out Why</button>
                 </div>
                 <div className={`${styles.perks__img} ${styles.imgContainer}`}>
-                    <img src={sundayTimesImg} alt="sunday-times-best-company-advert"/>
                 </div>
             </div>    
-            <div className={styles.benefits}>
+            <div className={`${styles.benefits} ${styles.section__container}`}>
                 <div className={`${styles.benefits__content} ${styles.content}`}>
                     <h3>Perks on a plate</h3>
                     <p>The Perks of Working Here</p>
