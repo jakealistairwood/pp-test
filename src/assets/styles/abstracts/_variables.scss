@@ -44,11 +44,11 @@ Typography imports
 }
 
 // Typography
-$headerFont: 'Avallon';
-$regularFont: 'MerlodNorme-Regular', sans-serif;
-$lightFont: 'MerlodNorme-Light' sans-serif;
-$semiBoldFont: 'MerlodNorme-Semi-Bold', sans-serif;
-$boldFont: 'MerlodNorme-Bold', sans-serif;
+$headerFont: 'Avallon', 'Helvetica Neue', sans-serif;
+$regularFont: 'MerlodNorme-Regular', 'Helvetica Neue', sans-serif;
+$lightFont: 'MerlodNorme-Light', 'Helvetica Neue', sans-serif;
+$semiBoldFont: 'MerlodNorme-Semi-Bold', 'Helvetica Neue', sans-serif;
+$boldFont: 'MerlodNorme-Bold', 'Helvetica Neue', sans-serif;
 
 // Colour Pallette
 $green: #43b870;

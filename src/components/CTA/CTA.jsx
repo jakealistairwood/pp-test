@@ -14,7 +14,7 @@ const CTA = () => {
                         <img className={styles.detailTop} src={detailIcon1} alt="design-detail"/>
                         <img src={detailIcon2} alt="design-detail"/>
                     </div>
-                    <h2>Join The Celebration</h2>
+                    <h1>Join The Celebration</h1>
                     <div className={styles.cta__headerDetail}>
                         <img className={styles.detailTop} src={detailIcon3} alt="design-detail"/>
                         <img src={detailIcon4} alt="design-detail"/>
