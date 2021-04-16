@@ -6,6 +6,7 @@ import Jobs from './components/Jobs';
 import News from './components/News';
 import Perks from './components/Perks';
 import About from './components/About';
+import Footer from './components/Footer';
 import './App.scss';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <News />
       <Perks />
       <About />
+      <Footer />
     </main>
   )
 }
