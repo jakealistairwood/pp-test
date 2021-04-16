@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 150px 50px;
+    // height: 80vh;
+
+    h3 {
+        font-size: 4rem;
+        line-height: 55px;
+        letter-spacing: 0.07em;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 30px;
+        width: 55%;
+        text-align: center;
+        font-size: 2rem;
+
+        span {
+            color: $white;
+            font-family: $regularFont;
+            font-size: 2rem;
+            font-style: italic;
+        }
+    }
+
+    .primary__btn {
+        font-size: 1.7rem;
+        padding: 15px 35px;
+    }
+}

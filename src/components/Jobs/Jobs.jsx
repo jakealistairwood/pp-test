@@ -26,7 +26,7 @@ const Jobs = () => {
                 </div>    
             </div>    
             <div className={styles.jobs__vacancies}>
-            <div className={styles.jobs__vacanciesContent}>
+                <div className={styles.jobs__vacanciesContent}>
                     <h2>Join the celebration</h2>
                     <p>Find A Job With More Sizzle <br></br>At Las Iguanas</p>
                     <button className={styles.secondary__btn}>Find Jobs Near You</button>

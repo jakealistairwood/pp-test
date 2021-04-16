@@ -1,0 +1,62 @@
+@import '../../assets/styles/main';
+
+.whyUs {
+    display: flex;
+    flex-direction: column;
+
+
+    .perks {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .perks__content {
+            h3 {
+                color: $lightBlue;
+            }
+
+            .primary__btn {
+                padding: 15px 75px;
+            }
+        }
+
+        .perks__img {
+            position: relative;
+            background-image: url('../../assets/img/explorejobs-img4.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+
+            img {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: row;
+
+        .benefits__content {
+            background-color: $turquoise;
+
+            h3 {
+                color: $offYellow;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+
+        .benefits__img {
+            background-image: url('../../assets/img/explorejobs-img5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -180px;
+            width: 50%;
+        }
+    }
+}
