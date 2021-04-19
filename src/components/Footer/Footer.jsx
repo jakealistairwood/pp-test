@@ -4,6 +4,7 @@ import facebookIcon from '../../assets/img/facebook.svg';
 import instagramIcon from '../../assets/img/instagram.svg';
 import twitterIcon from '../../assets/img/twitter.svg';
 import linkedinIcon from '../../assets/img/linkedin.svg';
+import uuid from 'react-uuid';
 
 const Footer = () => {
 
@@ -31,7 +32,7 @@ const Footer = () => {
     ];
 
     const renderSocialLinks = socialIcons.map(icon => {
-        return <a href={icon.href}>
+        return <a href={icon.href} key={uuid()}>
             <img src={icon.src} alt={icon.alt} />
         </a>
     })

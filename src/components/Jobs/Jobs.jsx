@@ -7,7 +7,7 @@ const Jobs = () => {
             <div className={`${styles.jobs__roles} ${styles.section__container}`}>
                 <div className={`${styles.jobs__rolesContent} ${styles.content}`}>
                     <h3>Life's a carnival <br></br>& you're invited!</h3>
-                    <p>Whatever Makes You <span class={styles.italic}>You, </span>Your Perfect Role Starts Here.</p>
+                    <p>Whatever Makes You <span className={styles.italic}>You, </span>Your Perfect Role Starts Here.</p>
                     <button className={styles.primary__btn}>Explore Roles</button>
                 </div>
                 <div className={`${styles.jobs__rolesImg} ${styles.imgContainer}`}>

@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import starIcon from '../../assets/img/star.svg';
+import uuid from 'react-uuid';
 
 const Hero = () => {
 
     const messages = ['Best-In-Class Benefits', 'Climb The Career Ladder', 'A Sunday Times Best Company To Work For', 'Made From Scratch', '#1 Casual Dining Group Brand With Over 10 Restuarants'];
 
     const renderMessages = messages.map(message => {
-        return <li className={styles.ticker__message}>
+        return <li className={styles.ticker__message} key={uuid()}>
             <div className={styles.ticker__messageWrapper}>
                 <img src={starIcon} alt="star-icon" />
                 <span>{message}</span>
