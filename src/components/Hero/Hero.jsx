@@ -19,7 +19,9 @@ const Hero = () => {
     return (
         <>
         <header className={styles.hero}>
-            <button className={styles.cta__btn}>Find Your Job</button>    
+            <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                <button className={styles.cta__btn}>Find Your Job</button>
+            </a>    
         </header>
         <section className={styles.ticker}>
             <div className={styles.ticker__wrapper}>

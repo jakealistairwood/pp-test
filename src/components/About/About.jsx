@@ -19,7 +19,9 @@ const About = () => {
                     If you're looking for a job in hospitality or catering, whether as a chef, waiter or waitress, bar staff, host or
                     manager, we'd love to meet you. But first, find out why jobs at Las Iguanas are something to celebrate.
                 </p>
-                <button className={styles.secondary__btn}>Find Your Job</button>
+                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                    <button className={styles.secondary__btn}>Find Your Job</button>
+                </a>
             </div>
         </section>
     )
