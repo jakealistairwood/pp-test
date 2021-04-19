@@ -39,6 +39,10 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 1024px) {
+        height: 8vh;
+    }
+
     .ticker__wrapper {
         width: 100%;
         padding-left: 100%;
@@ -65,10 +69,6 @@
                         font-size: 1.8rem;
                         margin: 0 40px;
                         white-space: nowrap;
-
-                        @media screen and (max-width: 1400px) {
-                            font-size: 1.5rem;
-                        }
 
                         @media screen and (max-width: 768px) {
                             font-size: 1.2rem;
