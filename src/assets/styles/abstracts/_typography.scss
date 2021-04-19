@@ -7,3 +7,13 @@ p {
     font-size: 1.8rem;
     text-transform: uppercase;
 }
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 0.07em;
+
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+}
