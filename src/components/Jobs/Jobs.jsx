@@ -8,7 +8,9 @@ const Jobs = () => {
                 <div className={`${styles.jobs__rolesContent} ${styles.content}`}>
                     <h3>Life's a carnival <br></br>& you're invited!</h3>
                     <p>Whatever Makes You <span className={styles.italic}>You, </span>Your Perfect Role Starts Here.</p>
-                    <button className={styles.primary__btn}>Explore Roles</button>
+                    <a href="https://www.iguanas.co.uk/roles/roles" target="_blank">
+                        <button className={styles.primary__btn}>Explore Roles</button>
+                    </a>
                 </div>
                 <div className={`${styles.jobs__rolesImg} ${styles.imgContainer}`}>
                 </div>
@@ -17,7 +19,9 @@ const Jobs = () => {
                 <div className={`${styles.jobs__featuredContent} ${styles.content}`}>
                     <h3>Work time?<br></br> More like show time</h3>
                     <p>Head Chef Jobs <br></br>At Las Iguanas</p>
-                    <button className={styles.primary__btn}>Explore Role</button>
+                    <a href="https://www.iguanas.co.uk/roles/head-chef-jobs" target="_blank">
+                        <button className={styles.primary__btn}>Explore Role</button>
+                    </a>
                 </div>
                 <div className={`${styles.jobs__featuredImg} ${styles.imgContainer}`}>
                 </div>    
@@ -26,7 +30,9 @@ const Jobs = () => {
                 <div className={`${styles.jobs__vacanciesContent} ${styles.content}`}>
                     <h3>Join the celebration</h3>
                     <p>Find A Job With More Sizzle <br></br>At Las Iguanas</p>
-                    <button className={styles.secondary__btn}>Find Jobs Near You</button>
+                    <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                        <button className={styles.secondary__btn}>Find Jobs Near You</button>
+                    </a>
                 </div>
                 <div className={`${styles.jobs__vacanciesImg} ${styles.imgContainer}`}>
                 </div>

@@ -20,19 +20,21 @@ const Navbar = () => {
                 <p>People</p>
             </div>    
             <ul className={`${styles.navbar__menu} ${toggleDropdown}`}>
-                <a href="">
+                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/careers/about-us" target="_blank">
                     <li className={styles.navbar__menuItem}>About Us</li>
                 </a>
-                <a href="">
+                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/career-news" target="_blank">
                     <li className={styles.navbar__menuItem}>News</li>
                 </a>
-                <a href="">
+                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/roles/roles" target="_blank">
                     <li className={styles.navbar__menuItem}>Our Roles</li>
                 </a>
-                <a href="">
+                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/careers/perks" target="_blank">
                     <li className={styles.navbar__menuItem}>Perks</li>
                 </a>
-                <button className={styles.navbar__btn}>Find Your Job</button>
+                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                    <button className={styles.navbar__btn}>Find Your Job</button>
+                </a>
             </ul>
             <div className={styles.navbar__hamburgerMenu} onClick={() => {
                 setIsOpen(!isOpen)
