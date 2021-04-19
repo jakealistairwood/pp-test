@@ -13,10 +13,6 @@
             h3 {
                 color: $lightBlue;
             }
-
-            .primary__btn {
-                padding: 15px 75px;
-            }
         }
 
         .perks__img {
@@ -63,6 +59,10 @@
             background-repeat: no-repeat;
             background-position: 0 -180px;
             clip-path: $rightImgClip;
+
+            @media screen and (max-width: 1024px) {
+                background-position: 0;
+            }
         }
     }
 }
