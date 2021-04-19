@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $headerFont;
+    letter-spacing: 0.07em;
 }
 
 p {
@@ -10,7 +11,6 @@ p {
 
 h1 {
     font-size: 4rem;
-    letter-spacing: 0.07em;
 
     @media screen and (max-width: 500px) {
         font-size: 2rem;
@@ -18,9 +18,12 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 4.5rem;
+}
+
 h3 {
     font-size: 3.8rem;
-    letter-spacing: 0.07em;
 
     @media screen and (max-width: 1024px) {
         font-size: 3.4rem;

@@ -9,21 +9,44 @@
     padding-top: 60px;
     padding-bottom: 100px;
 
+    @media screen and (max-width: 500px) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
     h2 {
         font-size: 4.5rem;
         letter-spacing: 0.07em;
         color: $white;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2.8rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
+        }
     }
 
     p {
         margin-bottom: 20px;
         font-size: 2rem;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.4rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 0.8rem;
+        }
     }
 
     .news__articles {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: center;
 
         .news__article {
@@ -37,6 +60,16 @@
             height: 400px;
             margin: 0 20px;
 
+            @media screen and (max-width: 768px) {
+                width: 300px;
+                height: 300px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 150px;
+                height: 150px;
+            }
+
             p {
                 position: absolute;
                 bottom: -20px;
@@ -45,6 +78,16 @@
                 background-color: rgba(0, 0, 0, 0.5);
                 text-align: center;
                 color: $white;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.3rem;
+                    padding: 20px 10px 30px 10px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 0.8rem;
+                    padding: 10px 5px 20px 5px;
+                }
             }
 
             .primary__btn {
@@ -54,6 +97,12 @@
                 transform: translateX(-50%);
                 padding: 15px 40px;
                 font-size: 1.2rem;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 0.8rem;
+                    padding: 7px 15px;
+                    bottom: -15px;
+                }
             }
         }
     }
