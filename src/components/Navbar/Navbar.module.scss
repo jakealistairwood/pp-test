@@ -14,6 +14,10 @@
     background-size: cover;
     z-index: 1000;
 
+    @media screen and (max-width: 768px) {
+        height: 10vh;
+    }
+
     .navbar__logo {
         display: flex;
         flex-direction: row;
@@ -21,6 +25,10 @@
 
         .logo__container {
             width: 150px;
+
+            @media screen and (max-width: 768px) {
+                width: 100px;
+            }
             
             img {
                 width: 100%;
@@ -34,6 +42,10 @@
             font-weight: 400;
             margin-left: 12px;
             text-transform: initial;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -42,11 +54,42 @@
         flex-direction: row;
         align-items: center;
 
-        .navbar__menuItem {
-            color: $white;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10vh;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-image: url('../../assets/img/navbar_banner.png');
+            padding: 20px 0;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        a {
             margin-right: 20px;
-            font-family: $semiBoldFont;
-            font-size: 1.2rem;
+            text-decoration: none;
+
+            @media screen and (max-width: 768px) {
+                margin: 0;
+                padding: 5px 0;
+            }
+
+            .navbar__menuItem {
+                color: $white;
+                font-family: $semiBoldFont;
+                font-size: 1.2rem;
+                transition: 0.3s ease-in;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid $white;
+                }
+            }
         }
 
         .navbar__btn {
@@ -60,6 +103,41 @@
             &:hover {
                 background-color: #D22377;
             }
+        }
+    }
+
+    .menuOpen {
+        opacity: 1;
+    }
+
+    .navbar__hamburgerMenu {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            cursor: pointer;
+        }
+
+        .lines {
+            width: 30px;
+            height: 3px;
+            background-color: $white;
+            margin: 5px 0;
+        }
+
+        .line__1 {
+            transform: rotate(-45deg) translate(-6px, 6px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .line__2 {
+            opacity: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .line__3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+            transition: transform 0.3s ease-in-out;
         }
     }
 }
