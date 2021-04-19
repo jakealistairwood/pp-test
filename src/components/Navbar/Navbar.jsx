@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
 import logo from '../../assets/img/logo.png';
+import uuid from 'react-uuid';
 
 const Navbar = () => {
 
@@ -11,6 +12,31 @@ const Navbar = () => {
     const toggleLine2 = isOpen ? styles.line__2 : '';
     const toggleLine3 = isOpen ? styles.line__3 : '';
 
+    const links = [
+        {
+            name: 'About Us',
+            href: 'https://www.iguanas.co.uk/careers/about-us'
+        },
+        {
+            name: 'News',
+            href: 'https://www.iguanas.co.uk/career-news'
+        },
+        {
+            name: 'Our Roles',
+            href: 'https://www.iguanas.co.uk/roles/roles'
+        },
+        {
+            name: 'Perks',
+            href: 'https://www.iguanas.co.uk/careers/perks'
+        }
+    ];
+
+    const renderLinks = links.map(link => {
+        return <a className={styles.navbar__linkWrapper} href={link.href} key={uuid()} target="_blank" rel="noreferrer">
+            <li className={styles.navbar__menuItem}>{link.name}</li>
+        </a>
+    })
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbar__logo}>
@@ -20,19 +46,8 @@ const Navbar = () => {
                 <p>People</p>
             </div>    
             <ul className={`${styles.navbar__menu} ${toggleDropdown}`}>
-                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/careers/about-us" target="_blank">
-                    <li className={styles.navbar__menuItem}>About Us</li>
-                </a>
-                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/career-news" target="_blank">
-                    <li className={styles.navbar__menuItem}>News</li>
-                </a>
-                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/roles/roles" target="_blank">
-                    <li className={styles.navbar__menuItem}>Our Roles</li>
-                </a>
-                <a className={styles.navbar__linkWrapper} href="https://www.iguanas.co.uk/careers/perks" target="_blank">
-                    <li className={styles.navbar__menuItem}>Perks</li>
-                </a>
-                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                {renderLinks}
+                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank" rel="noreferrer">
                     <button className={styles.navbar__btn}>Find Your Job</button>
                 </a>
             </ul>

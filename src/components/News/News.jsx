@@ -9,13 +9,13 @@ const News = () => {
             <div className={styles.news__articles}>
                 <div className={styles.news__article}>
                     <p>News Article Title That Can Run Over Two Lines With Darkened Bg</p>
-                    <a href="https://www.iguanas.co.uk/career-news" target="_blank">
+                    <a href="https://www.iguanas.co.uk/career-news" target="_blank" rel="noreferrer">
                         <button className={styles.primary__btn}>Find Out More</button>
                     </a>
                 </div>
                 <div className={styles.news__article}>
                     <p>News Article Title That Can Run Over Two Lines With Darkened Bg</p>
-                    <a href="https://www.iguanas.co.uk/career-news" target="_blank">
+                    <a href="https://www.iguanas.co.uk/career-news" target="_blank" rel="noreferrer">
                         <button className={styles.primary__btn}>Find Out More</button>
                     </a>
                 </div>

@@ -21,7 +21,7 @@ const CTA = () => {
                     </div>
                 </div>
                 <p>Find A Job With More Life At Las Iguanas</p>
-                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank">
+                <a href="https://www.iguanas.co.uk/careers/job-search" target="_blank" rel="noreferrer">
                     <button className={styles.primary__btn}>Find Your Job</button>
                 </a>
             </div>    
