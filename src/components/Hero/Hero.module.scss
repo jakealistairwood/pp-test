@@ -5,14 +5,10 @@
     height: 80vh;
     width: 100%;
     background-image: url('../../assets/img/hero-img.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 50px;
-
-    @media screen and (max-width: 1440px) {
-        background-size: cover;
-    }
 
     .cta__btn {
         position: absolute;
@@ -69,6 +65,18 @@
                         font-size: 1.8rem;
                         margin: 0 40px;
                         white-space: nowrap;
+
+                        @media screen and (max-width: 1400px) {
+                            font-size: 1.5rem;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.2rem;
+                        }
+
+                        @media screen and (max-width: 500px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
