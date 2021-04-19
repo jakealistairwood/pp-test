@@ -9,7 +9,7 @@ const Perks = () => {
                 <div className={`${styles.perks__content} ${styles.content}`}>
                     <h3>100 reasons to work <br></br> at Las Iguanas</h3>
                     <p>People Love It Here</p>
-                    <a href="https://www.iguanas.co.uk/careers/perks" target="_blank">
+                    <a href="https://www.iguanas.co.uk/careers/perks" target="_blank" rel="noreferrer">
                         <button className={styles.primary__btn}>Find Out Why</button>
                     </a>
                 </div>
@@ -20,7 +20,7 @@ const Perks = () => {
                 <div className={`${styles.benefits__content} ${styles.content}`}>
                     <h3>Perks on a plate</h3>
                     <p>The Perks of Working Here</p>
-                    <a href="https://www.iguanas.co.uk/careers/perks" target="_blank">
+                    <a href="https://www.iguanas.co.uk/careers/perks" target="_blank" rel="noreferrer">
                         <button className={styles.primary__btn}>Explore Our Perks</button>
                     </a>
                 </div>
