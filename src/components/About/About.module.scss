@@ -8,6 +8,10 @@
     background-color: $orange;
     padding: 75px 0;
 
+    @media screen and (max-width: 500px) {
+        padding: 30px 0;
+    }
+
     .about__container {
         display: flex;
         flex-direction: column;
@@ -15,14 +19,21 @@
         width: 55%;
         margin: 0 auto;
 
+        @media screen and (max-width: 768px) {
+            width: 80%;
+        }
+
         h3, p {
             text-align: center;
             margin-bottom: 30px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
         }
 
         h3 {
             color: $offYellow;
-            font-size: 4rem;
         }
 
         p {
@@ -30,16 +41,44 @@
             color: $white;
             font-size: 2rem;
 
+            @media screen and (max-width: 768px) {
+                font-size: 1.2rem;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 0.8rem;
+            }
+
             .italic {
                 font-size: 1.7rem;
                 font-style: italic;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+    
+                @media screen and (max-width: 500px) {
+                    font-size: 0.8rem;
+                }
             }
         }
 
         .secondary__btn {
-            width: 240px;
-            height: 50px;
             font-size: 1.7rem;
+            padding: 15px 75px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 1.5rem;
+            }
+    
+            @media screen and (max-width: 768px) {
+                font-size: 1.2rem;
+            } 
+    
+            @media screen and (max-width: 500px) {
+                font-size: 0.8rem;
+                padding: 7px 20px;
+            }
         }
     }
 }
