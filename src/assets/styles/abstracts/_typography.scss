@@ -4,9 +4,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: $regularFont;
+    font-family: $regularEditedFont;
     font-size: 1.8rem;
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+}
+
+button {
+    font-family: $regularEditedFont;
 }
 
 h1 {
@@ -24,6 +30,11 @@ h2 {
 
 h3 {
     font-size: 3.8rem;
+    line-height: 60px;
+
+    @media screen and (max-width: 1600px) {
+        line-height: 50px;
+    }
 
     @media screen and (max-width: 1024px) {
         font-size: 3.4rem;

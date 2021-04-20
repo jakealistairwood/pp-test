@@ -60,7 +60,7 @@
             background-position: 0 -180px;
             clip-path: $rightImgClip;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1600px) {
                 background-position: 0;
             }
         }

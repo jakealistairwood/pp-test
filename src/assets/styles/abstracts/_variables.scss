@@ -12,40 +12,43 @@ Typography imports
 // MerlodNorme - Light weight import 
 @font-face {
     font-family: 'MerlodNorme-Light';
-    src: url('../../fonts/\ MerlodNorme-Light.otf');
+    src: url('../../fonts/merlodnorme-light.woff');
 }
 
 // MerlodNorme - Regular weight imports
 @font-face {
     font-family: 'MerlonNorme-Regular';
-    src: url('../../fonts/MerlodNorme-Regular.otf');
+    src: url('../../fonts/merlodnorme-regular.woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'MerlodNorme-Regular-Edited';
-    src: url('../../fonts/MerlodNorme-Regular-Edited0.otf');
+    src: url('../../fonts/merlodnorme-regular-edited0.woff');
 }
 
 // MerlodNorme - Semi-Bold weight import
 @font-face {
     font-family: 'MerlodNorme-Semi-Bold';
-    src: url('../../fonts/MerlodNorme-SemiBold.otf');
+    src: url('../../fonts/merlodnorme-semibold.woff');
 }
 
 // MerlodNorme - Bold weight imports
 @font-face {
     font-family: 'MerlodNorme-Bold';
-    src: url('../../fonts/MerlodNorme-Bold.otf');
+    src: url('../../fonts/merlodnorme-bold.woff');
 }
 
 @font-face {
     font-family: 'MerlodNorme-Bold-Edited';
-    src: url('../../fonts/MerlodNorme-Bold-Edited0.otf')
+    src: url('../../fonts/merlodnorme-bold-edited0.woff');
 }
 
 // Typography
 $headerFont: 'Avallon', 'Helvetica Neue', sans-serif;
 $regularFont: 'MerlodNorme-Regular', 'Helvetica Neue', sans-serif;
+$regularEditedFont: 'MerlodNorme-Regular-Edited', 'Helvetica Neue', sans-serif;
 $lightFont: 'MerlodNorme-Light', 'Helvetica Neue', sans-serif;
 $semiBoldFont: 'MerlodNorme-Semi-Bold', 'Helvetica Neue', sans-serif;
 $boldFont: 'MerlodNorme-Bold', 'Helvetica Neue', sans-serif;
