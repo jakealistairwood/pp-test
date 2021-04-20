@@ -56,19 +56,7 @@
         align-items: center;
 
         @media screen and (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 8vh;
-            left: 0;
-            right: 0;
-            width: 100%;
-            background-image: url('../../assets/img/navbar_banner.png');
-            padding: 20px 0;
-            transition: opacity 0.3s ease-in-out;
-            opacity: 0;
+            display: none;
         }
 
         .navbar__linkWrapper {
@@ -109,7 +97,17 @@
     }
 
     .menuOpen {
-        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-image: url('../../assets/img/navbar_banner.png');
+        padding: 20px 0;
     }
 
     .navbar__hamburgerMenu {
